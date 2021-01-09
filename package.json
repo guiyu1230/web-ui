@@ -1,0 +1,19 @@
+{
+  "name": "web-ui",
+  "version": "1.0.0",
+  "description": "my web ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guiyu1230/web-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guiyu1230/web-ui/issues"
+  },
+  "homepage": "https://github.com/guiyu1230/web-ui#readme"
+}
