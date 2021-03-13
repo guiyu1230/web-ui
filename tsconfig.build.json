@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "build",  // 编译出来后 输出的文件夹名称
+        "outDir": "dist",  // 编译出来后 输出的文件夹名称
         "module": "esnext", // 输出类型 'commonjs' 'umd' 'system' 'esnext'
         "target": "es5",    // 编译后输出的目标版本
         "declaration": true,// 为每一个ts文件生成.d.ts文件
