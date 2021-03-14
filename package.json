@@ -94,10 +94,11 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "npm run clean && npm run build-ts",
+    "build": "npm run clean && npm run build-ts && npm run build-css",
     "clean": "rimraf ./dist",
     "test": "node scripts/test.js",
     "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "copyfiles -u 1 ./src/**/**.css ./dist/",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepublish": "npm run build"
