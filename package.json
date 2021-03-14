@@ -19,7 +19,7 @@
     "url": "https://github.com/guiyu1230/web-ui"
   },
   "files": [
-    "dist" 
+    "dist"
   ],
   "dependencies": {
     "@babel/core": "7.12.3",
@@ -98,7 +98,7 @@
     "clean": "rimraf ./dist",
     "test": "node scripts/test.js",
     "build-ts": "tsc -p tsconfig.build.json",
-    "build-css": "copyfiles -u 1 ./src/**/**.css ./dist/",
+    "build-css": "lessc src/index.less dist/index.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepublish": "npm run build"
@@ -183,6 +183,7 @@
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/react": "^6.1.11",
+    "less": "^4.1.1",
     "rimraf": "^3.0.2"
   }
 }
