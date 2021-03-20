@@ -1,16 +1,17 @@
 {
     "compilerOptions": {
-        "outDir": "build",
-        "module": "esnext",
-        "target": "es5",
-        "declaration": true,
-        "jsx": "react",
-        "im"
+        "outDir": "dist",  // 编译出来后 输出的文件夹名称
+        "module": "esnext", // 输出类型 'commonjs' 'umd' 'system' 'esnext'
+        "target": "es5",    // 编译后输出的目标版本
+        "declaration": true,// 为每一个ts文件生成.d.ts文件
+        "jsx": "react",     // react专用
+        "moduleResolution": "node",  // 引入模式采用Node
+        "allowSyntheticDefaultImports": true   // 允许 import react  => import * 
     },
-    "include": {
+    "include": [            // 希望编译
         "src"
-    },
-    "exclude": [
+    ],
+    "exclude": [            // 不希望编译
         "src/**/*.test.tsx",
         "src/**/*.stories.tsx"
     ]
