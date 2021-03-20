@@ -13,7 +13,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/guiyu1230/web-ui.io",
+  "homepage": "https://guiyu1230.github.io/web-ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/guiyu1230/web-ui"
