@@ -102,7 +102,7 @@
     "copy-less": "copyfiles -u 1 ./src/**/*.less ./dist/",
     "build-less": "lessc src/index.less dist/index.css",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o ./docs",
     "prepublish": "npm run build",
     "predeploy": "npm run build-storybook",
     "deploy": "gh-pages -d storybook-static"
