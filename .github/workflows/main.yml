@@ -11,12 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2.3.1
 
-    - name: Build and Deploy
+    - name: Install and Build
+      run: |
+          npm install
+          npm run build-storybook
+    
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build-storybook
+      with:
+          branch: gh-pages
+          folder: storybook-static
