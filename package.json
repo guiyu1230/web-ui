@@ -36,8 +36,8 @@
     "build-css": "npm run copy-less && npm run build-less",
     "copy-less": "copyfiles -u 1 ./src/**/*.less ./dist/",
     "build-less": "lessc src/index.less dist/index.css",
-    "storybook": "start-storybook -p 6006 -s public --no-manager-cache",
-    "build-storybook": "build-storybook -o ./docs",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "prepublishOnly": "npm run test:nowatch && npm run lint && npm run build"
   },
   "eslintConfig": {
