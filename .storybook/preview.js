@@ -1,9 +1,9 @@
 import { configure } from '@storybook/react';
 import "../src/index.less";
 
-// export const parameters = {
-//   actions: { argTypesRegex: "^on[A-Z].*" },
-// }
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+}
 
 // 将welcome文档说明置于顶部
 const loadFn = () => {
